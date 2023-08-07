@@ -14,7 +14,7 @@ public abstract class  Piece {
 	public abstract boolean[][] possibleMoves();
 	
 	public boolean possibleMove(Position pos) {
-		return possibleMoves()[pos.getColumn()][pos.getColumn()];
+		return possibleMoves()[pos.getRow()][pos.getColumn()];
 	}
 	
 	public boolean isThereAPossibleMove() {
